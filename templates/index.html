@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+Home Page
+{% endblock %}
+
+{% block body %}
+<h1>Does the mask matches with the image?</h1>
+<image src="{{ url_for('static', filename='images/50.893382506261,6.676875038928061,128,Rhein-Erft-Kreis.png')}}" width ="320" height=auto></image>
+<image src="{{ url_for('static', filename='images/50.893382506261,6.676875038928061,128,Rhein-Erft-Kreis (1).png')}}" width ="320" height=auto></image>
+<br/>
+<button class="button button1">Yes</button>
+<button class="button button2">No</button>
+{% endblock %}
